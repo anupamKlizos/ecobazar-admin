@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 7" width="7" height="7">
+	<title>check-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m3.5 7c-1.94 0-3.5-1.56-3.5-3.5 0-1.94 1.56-3.5 3.5-3.5 1.94 0 3.5 1.56 3.5 3.5 0 1.94-1.56 3.5-3.5 3.5z"/>
+		</clipPath>
+		<image  width="8" height="8" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIAQMAAAD+wSzIAAAAAXNSR0IB2cksfwAAAANQTFRFALIH7+1kQwAAAAxJREFUeJxjZGBEgQAAWAAJLpjsTQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { fill: #000000 } 
+	</style>
+	<path class="s0" d="m4 6c-1.1 0-2-0.9-2-2 0-1.1 0.9-2 2-2 1.1 0 2 0.9 2 2 0 1.1-0.9 2-2 2z"/>
+	<g clip-path="url(#cp1)">
+		<path id="Layer 2" class="s1" d="m3.5 7c-1.9 0-3.5-1.6-3.5-3.5 0-1.9 1.6-3.5 3.5-3.5 1.9 0 3.5 1.6 3.5 3.5 0 1.9-1.6 3.5-3.5 3.5z"/>
+		<use id="Layer 1" href="#img1" x="0" y="-1"/>
+	</g>
+</svg>

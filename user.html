@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="icon" href="./assets/image/faveicon.ico">
+    <title>Ecobazar :: User</title>
+</head>
+
+<body>
+
+    <aside class="sidebar navbar-aside">
+      
+        <div class="aside-top">
+            <a href="index.html" class="sidebar-logo">
+                <img src="./assets/image/logo.png" alt="site logo" class="light-logo">
+                <img src="./assets/image/f_logo.png" alt="site logo" class="dark-logo">
+                <img src="./assets/image/logo.png" alt="site logo" class="logo-icon">
+            </a>
+      
+            <button class="btn toggle-bars"> <i class="fa-solid fa-bars"></i></button>
+        </div>
+    
+        <div class="sidebar-menu-area">
+            <ul class="sidebar-menu menu-aside" id="sidebar-menu">
+
+                <li class="menu-item">
+                    <a href="index.html" class="menu-link">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+        
+                <li class="menu-item">
+                    <a href="order.html" class="menu-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="text">Orders</span>
+                    </a>
+                </li>
+        
+                <li class="menu-item">
+                    <a href="product.html" class="menu-link">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="text">Products</span> 
+                    </a>
+                </li>
+
+                <!-- <li class="menu-item">
+                    <a href="vendor.html" class="menu-link">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span class="text">Vendors</span> 
+                    </a>
+                </li> -->
+        
+                <li class="menu-item">
+                    <a href="category.html" class="menu-link">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span class="text">Category</span> 
+                    </a>
+                </li>
+        
+                <li class="menu-item active">
+                    <a href="user.html" class="menu-link">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="text">Users</span> 
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="review.html" class="menu-link">
+                        <i class="fa-solid fa-message"></i>
+                        <span class="text">Reviews</span> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+    </aside>
+
+    <main class="main-wrap">
+    
+        <header class="main-header navbar">
+
+        <div class="col-6">
+            <form class="searchform">
+                <div class="input-group">
+                    <input list="search_terms" type="text" class="form-control" placeholder="Search term">
+                    <button class="btn" type="button"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <datalist id="search_terms">
+                    <option value="Products"></option>
+                    <option value="New orders"></option>
+                    <option value="Apple iphone"></option>
+                    <option value="Ahmed Hassan"></option>
+                </datalist>
+            </form>
+        </div>
+
+        <div class="col-2 d-flex justify-content-end align-items-center">
+            <button class="btn btn-icon btn-mobile me-auto" data-trigger="#offcanvas_aside"> <i class="material-icons md-apps"></i> </button>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link btn-icon notifications" href="#">
+                        <i class="fa-solid fa-bell animation-shake"></i>
+                        <span class="badge rounded-pill">3</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link btn-icon darkmode" href="#"><i class="fa-solid fa-moon"></i> </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="requestfullscreen nav-link btn-icon"><i class="material-icons md-cast"></i></a>
+                </li>
+
+                <li class="dropdown nav-item user_info">
+                    <div class="dropdown">
+                      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="img-xs rounded-circle" src="./assets/image/customer_1.png" alt="User">
+                      </a>
+                    
+                      <ul class="dropdown-menu common-dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i>Edit Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i>Account Settings</a></li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+                      </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        </header>
+    
+        <div class="dashboard-main-body">
+            <section class="content-main">
+                <div class="content-header">
+                    <div>
+                        <h2 class="content-title card-title">Users </h2>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                    <div>
+                        <ul class="breadcrumbs d-flex align-items-center justify-content-end">
+                            <li>
+                                <a href="/">
+                                    <div class="text-tiny">Dashboard</div>
+                                </a>
+                            </li>
+
+                            <li><i class="fa-solid fa-chevron-right"></i></li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="text-tiny">User</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="card mb-4">
+                    <header class="card-header">
+                        <div class="row gx-3">
+                            <div class="col-lg-4 col-md-6 me-auto">
+                                <input type="text" placeholder="Search..." class="form-control">
+                            </div>
+
+                            <div class="col-lg-2 col-6 col-md-3">
+                                <select class="form-select">
+                                    <option>Show 20</option>
+                                    <option>Show 30</option>
+                                    <option>Show 40</option>
+                                </select>
+                            </div>
+                        </div>
+                    </header>
+        
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#ID</th>
+                                        <th scope="col">User
+                                            <div class="form-check table-filter">
+                                                <input class="form-check-input filter_input" type="checkbox" value="">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    <span class="filter">
+                                                        <i class="fa-solid fa-sort-up"></i>
+                                                        <i class="fa-solid fa-sort-down"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        
+                                        <th scope="col">Number
+                                            <div class="form-check table-filter">
+                                                <input class="form-check-input filter_input" type="checkbox" value="">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    <span class="filter">
+                                                        <i class="fa-solid fa-sort-up"></i>
+                                                        <i class="fa-solid fa-sort-down"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </th>
+
+                                        <th scope="col">Email
+                                            <div class="form-check table-filter">
+                                                <input class="form-check-input filter_input" type="checkbox" value="">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    <span class="filter">
+                                                        <i class="fa-solid fa-sort-up"></i>
+                                                        <i class="fa-solid fa-sort-down"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        
+                                        <th scope="col" class="text-end"> Action </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="admin_user">
+                                                <div class="image">
+                                                    <img src="./assets/image/user/user-6.png" alt="">
+                                                </div>
+
+                                                <div class="content">
+                                                    <h4>Kristin Watson</h4>
+                                                    <h5>User ID: #439</h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>7657965876</td>
+                                        <td>use@gmail.com</td>
+                                        <td class="text-end">
+                                            <button class="btn card-btn btn-primary"><i class="bi bi-pencil"></i></button>
+                                            <button class="btn card-btn btn-danger"><i class="bi bi-trash"></i></button>
+                                            <button class="btn card-btn btn-success"><i class="bi-eye"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="admin_user">
+                                                <div class="image">
+                                                    <img src="./assets/image/user/user-7.png" alt="">
+                                                </div>
+
+                                                <div class="content">
+                                                    <h4>Kristin Watson</h4>
+                                                    <h5>User ID: #439</h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>7657965876</td>
+                                        <td>use@gmail.com</td>
+                                        <td class="text-end">
+                                            <button class="btn card-btn btn-primary"><i class="bi bi-pencil"></i></button>
+                                            <button class="btn card-btn btn-danger"><i class="bi bi-trash"></i></button>
+                                            <button class="btn card-btn btn-success"><i class="bi-eye"></i></button>
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="admin_user">
+                                                <div class="image">
+                                                    <img src="./assets/image/user/user-8.png" alt="">
+                                                </div>
+
+                                                <div class="content">
+                                                    <h4>Kristin Watson</h4>
+                                                    <h5>User ID: #439</h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>7657965876</td>
+                                        <td>use@gmail.com</td>
+                                        <td class="text-end">
+                                            <button class="btn card-btn btn-primary"><i class="bi bi-pencil"></i></button>
+                                            <button class="btn card-btn btn-danger"><i class="bi bi-trash"></i></button>
+                                            <button class="btn card-btn btn-success"><i class="bi-eye"></i></button>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="admin_user">
+                                                <div class="image">
+                                                    <img src="./assets/image/user/user-9.png" alt="">
+                                                </div>
+
+                                                <div class="content">
+                                                    <h4>Kristin Watson</h4>
+                                                    <h5>User ID: #439</h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>7657965876</td>
+                                        <td>use@gmail.com</td>
+                                        <td class="text-end">
+                                            <button class="btn card-btn btn-primary"><i class="bi bi-pencil"></i></button>
+                                            <button class="btn card-btn btn-danger"><i class="bi bi-trash"></i></button>
+                                            <button class="btn card-btn btn-success"><i class="bi-eye"></i></button>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="admin_user">
+                                                <div class="image">
+                                                    <img src="./assets/image/user/user-10.png" alt="">
+                                                </div>
+
+                                                <div class="content">
+                                                    <h4>Kristin Watson</h4>
+                                                    <h5>User ID: #439</h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>7657965876</td>
+                                        <td>use@gmail.com</td>
+                                        <td class="text-end">
+                                            <button class="btn card-btn btn-primary"><i class="bi bi-pencil"></i></button>
+                                            <button class="btn card-btn btn-danger"><i class="bi bi-trash"></i></button>
+                                            <button class="btn card-btn btn-success"><i class="bi-eye"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="admin_user">
+                                                <div class="image">
+                                                    <img src="./assets/image/user/user-11.png" alt="">
+                                                </div>
+
+                                                <div class="content">
+                                                    <h4>Kristin Watson</h4>
+                                                    <h5>User ID: #439</h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>7657965876</td>
+                                        <td>use@gmail.com</td>
+                                        <td class="text-end">
+                                            <button class="btn card-btn btn-primary"><i class="bi bi-pencil"></i></button>
+                                            <button class="btn card-btn btn-danger"><i class="bi bi-trash"></i></button>
+                                            <button class="btn card-btn btn-success"><i class="bi-eye"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="admin_user">
+                                                <div class="image">
+                                                    <img src="./assets/image/user/user-13.png" alt="">
+                                                </div>
+
+                                                <div class="content">
+                                                    <h4>Kristin Watson</h4>
+                                                    <h5>User ID: #439</h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>7657965876</td>
+                                        <td>use@gmail.com</td>
+                                        <td class="text-end">
+                                            <button class="btn card-btn btn-primary"><i class="bi bi-pencil"></i></button>
+                                            <button class="btn card-btn btn-danger"><i class="bi bi-trash"></i></button>
+                                            <button class="btn card-btn btn-success"><i class="bi-eye"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="admin_user">
+                                                <div class="image">
+                                                    <img src="./assets/image/user/user-14.png" alt="">
+                                                </div>
+
+                                                <div class="content">
+                                                    <h4>Kristin Watson</h4>
+                                                    <h5>User ID: #439</h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>7657965876</td>
+                                        <td>use@gmail.com</td>
+                                        <td class="text-end">
+                                            <button class="btn card-btn btn-primary"><i class="bi bi-pencil"></i></button>
+                                            <button class="btn card-btn btn-danger"><i class="bi bi-trash"></i></button>
+                                            <button class="btn card-btn btn-success"><i class="bi-eye"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                    </div> 
+                </div>
+
+                <div class="row mt-3 mb-5">
+                    <div class="col-lg-6 d-flex justify-content-start align-items-center">
+                        <p class="mb-0"><span>274</span> Results</p>
+                    </div>
+
+                    <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                        <div class="pagination-area mt-15 mb-50">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-start">
+                                    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                    <li class="page-item"><a class="page-link dot" href="#">...</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">16</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        
+    
+        <footer class="d-footer">
+            <div class="d-flex align-items-center justify-content-center">
+                <p class="mb-0">Ecobazar eCommerce © 2024. All Rights Reserved</p>
+            </div>
+        </footer>
+    </main>
+
+
+</body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</html>
